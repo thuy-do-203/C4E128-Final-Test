@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 2</title>
+</head>
+<body>
+    <script>
+        //Nhập số và đưa về số nguyên
+        const number = parseInt(prompt("Enter your number: "));
+        
+        //Kiểm tra số nhập vào có từ 1-10 không
+        if (number < 0 || number > 10) {
+            console.log("Please enter number between 1 to 10");
+        } else {
+            numberOneTriangle(number);
+        }
+        // Vòng lặp for để in ra tam giác *
+        function numberOneTriangle(number) {
+          star = "";
+          for (let i = 1; i <= number; i++) {
+            star = star + " *";
+            console.log(star);
+          }
+        }
+      </script>
+</body>
+</html>
